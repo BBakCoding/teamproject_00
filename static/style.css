@@ -70,6 +70,7 @@
     color: #999;
     transition: top .5s ease;
 }
+
 .int-area label.warning {
     color: red !important;
     animation: warning .3s ease;
@@ -77,13 +78,25 @@
 }
 
 @keyframes warning {
-    0% {transform: translateX(-8px);}
-    24% {transform: translateX(8px);}
-    50% {transform: translateX(-8px);}
-    75% {transform: translateX(8px);}
+    0% {
+        transform: translateX(-8px);
+    }
+
+    24% {
+        transform: translateX(8px);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+
+    75% {
+        transform: translateX(8px);
+    }
 }
-.int-area input:focus + label,
-.int-area input:valid + label {
+
+.int-area input:focus+label,
+.int-area input:valid+label {
     top: -2px;
     font-size: 13px;
     color: #166cea;
