@@ -1,6 +1,51 @@
-* {
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .section {
@@ -18,7 +63,7 @@
   position: relative;
   background-color: white;
   background-size: cover;
-  height: 754px;
+  height: 900px;
 }
 
 .section--third {
@@ -26,4 +71,64 @@
   background-color: #ff3300;
   background-size: cover;
   height: 754px;
+}
+
+/* 여기부터 정현 0924 */
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  border: none;
+  display: flex;
+}
+
+#first-line {
+  justify-content: flex-start;
+}
+
+#second-line {
+  justify-content: flex-end;
+}
+
+.item {
+  margin: 40px 40px 40px 40px;
+  width: 400px;
+  border: 1px solid #ff3300;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  color: black;
+  height: max-content;
+  padding: 20px 20px 20px 20px;
+}
+
+.item1 {
+  flex-shrink: 0;
+  flex-basis: 450px;
+}
+
+.item2 {
+  flex-shrink: 0;
+  flex-basis: 450px
+}
+
+.item3 {
+  flex-shrink: 0;
+  flex-basis: 450px;
+}
+
+.item4 {
+  flex-shrink: 0;
+  flex-basis: 450px
+}
+
+
+#bulletin {
+  font-size: 100px;
+  text-align: center;
+  margin: 50px auto 50px auto;
+}
+
+.question {
+  font-size: 20px;
 }
