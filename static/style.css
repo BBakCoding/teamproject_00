@@ -1,101 +1,180 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: font-family: 'Noto Sans KR', sans-serif;;
+    margin: 0;
+    padding: 0;
+}
+* {box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;; }
+
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    overflow: hidden;
 }
 
-/* 섹션 */
+
 
 .section {
-  position: relative;
+    position: relative;
 }
-
-.section--first {
-  position: relative;
-  background-color: #ff3300;
-  background-size: cover;
-  height: 754px;
-}
-
-.section--second {
-  position: relative;
-  background-color: #ffffff;
-  background-size: cover;
-  height: 900px;
-}
-
-.section--third {
-  position: relative;
-  background-color: #ff3300;
-  background-size: cover;
-  height: 754px;
-}
-
-/* 여기부터 두번째 섹션 (정현 0924) */
-
-
-
-.story-container {
-  margin: 0 auto;
-  width: 1200px;
-  border: none;
-  display: flex;
-}
-
-#first-line {
-  justify-content: flex-start;
-}
-
-#second-line {
-  justify-content: flex-end;
-}
-
-.item {
   
-  width: 450px;
-  border: none;
-  background-color: #ff3300;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 7px;
-  line-height: 50px;
-  height: 300px;
-  margin: 2.5rem 2.5rem;
-  box-shadow: 10px 10px 10px -5px rgba(0, 42, 70, .3);
-  transition: 0.4s;
+.section--first {
+    position: relative;
+    background-color: #ff3300;
+    background-size: cover;
+    height: 754px;
+} 
+.section--second {
+    position: relative;
+    background-color: #ffffff;
+    background-size: cover;
+    height: 754px;
+}
+  
+.section--third {
+    position: relative;
+    background-color: #ff3300;
+    background-size: cover;
+    height: 754px;
 }
 
-.item:hover {
-  transform: translate(0, -5px);
-  box-shadow: 10px 10px 10px 0px rgba(0, 42, 70, .3);
+
+
+
+.qna-container {
+      width: 100%;
+      margin-top: 2rem;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+}
+
+.qna-title-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+.qna-title {
+      font-size: 3rem;
+      font-family: 'EB Garamond', serif;
+      margin-left: 2rem;
+  }
+
+   /* 카드리스트 좌우 이동 */
+.arrow-container {
+      display: flex;
+  }
+
+.slide-prev {
+      margin: 3px;
+      cursor: pointer;
+  }
+
+  .slide-next {
+      margin: 3px;
+      cursor: pointer;
+  }
+
+.qna-desc {
+    margin: 40px;
+    font-size: 1.3rem;
+}
+
+  .qna-showlist {
+      display: flex;
+      list-style: none;
+      padding: 2rem 0;
+      position: absolute;
+      margin: 2rem 0 0 0;
+      overflow: hidden;
+  }
+
+
+  .qna-showcard {
+      width: 650px;
+      height: 400px;
+      box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.3);
+      border-radius: 8px;
+      margin: 0px 40px;
+      overflow: hidden;
+  }
+
+  .show-question-container {
+      padding: 30px;
+  }
+
+  .show-question-text {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2rem;
+    
+  }
+
+  .show-answer-container {
+      padding: 30px;
+  }
+
+  .show-answer-text {
+      font-size: 1.3rem;
+      line-height: 160%;
+      width: 100%;    
+      display:-webkit-box;
+      -webkit-line-clamp:5;
+      -webkit-box-orient:vertical;
+      height: 100%;
+      overflow:hidden;
+      text-overflow:ellipsis;
 }
 
 
-#bulletin {
-  text-align: center;
-  margin-top: 5rem;
+#backtotop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s 0.5s 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    cursor: pointer;
 }
 
-.question {
-  height: 100px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: white;
-  line-height: 100px;
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+ 
 }
 
-.answer {
-  font-size: 1rem;
-  font-weight: 200;
-  color: black;
-  background-color: white;
-  line-height: 1.6rem;
-  padding: 40px 40px;
-  height: 130px ; 
-  display: table-cell; 
-  vertical-align: middle;
+  @media only screen and (min-width: 1200px) {
+      .inner {
+          max-width: 1200px;
+      }
+  }
+
+  @media only screen and (max-width: 980px) {
+    /*화면크기 작아지면 변경할 사항들 */
+    .show-answer-text {
+        font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+      /*화면크기 작아지면 변경할 사항들 */
+        .arrow-container {
+            display: none;
+        }
+
+        .qna-showcard {
+            width: 250px;
+            position: relative;
+        }
+
+        .show-answer-text {
+            font-size: 1.1rem;
+        }
+    }
 
 }
-
