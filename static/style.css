@@ -4,16 +4,6 @@
 
 }
 
-/* a 링크 초기화 */
-a {
-    color: #222;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #2698cb;
-}
-
 /* 레이아웃 */
 body {
 }
@@ -38,11 +28,12 @@ body {
 }
 
 .header .header_menu a {
+    text-decoration: none;
     color: #ffffff;
     padding: 15px 0 6px 10px;
     display: inline-block;
     transition: color 0.3s ease;
-    font-family: 'Lora', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
 }
 
@@ -52,55 +43,90 @@ body {
 }
 
 /* section_01 */
-.section_01 {;
+.section_01 {
     width: 1500px;
     height: 700px;
 }
 
 .section_01 .Q_wrapper {
-    width: 790px;
+    width: 760px;
     margin: 0 auto;
     padding-top: 150px;
 }
 
 .section_01 .Q_text {
     float: left;
-    font-family: 'Lora', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 100px;
-    font-weight: bold;
     color: white;
     padding-top: 100px;
-    float: left;
     margin: 0 10px;
 }
 
 .section_01 .Q_image {
     float: left;
+    width: 200px;
+    height: 386px;
     margin: 0 10px;
+}
+
+.section_01 .Q_image .logo {
+    max-width: 100%;
+    height: auto;
 }
 
 
 /* media query*/
-/* 화면 너비 0 ~ 1520px */
-@media (max-width: 1520px) {
-    .header {width: 100%}
-    .header .row {padding: 0 15px}
+/* 화면 너비 0 ~ 1540px */
+@media (max-width: 1540px) {
+    .header {
+        width: 100%;
+    }
+
+    .header .row {
+        padding: 0 15px;
+    }
+
+    .section_01 {
+        width: 100%;
+    }
 
 }
 
 /* 화면 너비 0 ~ 1024px */
 @media (max-width: 1024px) {
-
 }
 
 /* 화면 너비 0 ~ 960px */
 @media (max-width: 960px) {
+    .section_01 .Q_wrapper {
+        width: 580px;
+        margin: 0 auto;
+    }
+    .section_01 .Q_text {
+        font-size: 70px;
+    }
 
+    .section_01 .Q_image {
+        width: 170px;
+        height: auto;
+    }
 }
 
 /* 화면 너비 0 ~ 768px */
 @media (max-width: 768px) {
+    .section_01 .Q_wrapper {
+        width: 460px;
+        margin: 0 auto;
+    }
+    .section_01 .Q_text {
+        font-size: 50px;
+    }
 
+    .section_01 .Q_image {
+        width: 150px;
+        height: auto;
+    }
 }
 
 /* 화면 너비 0 ~ 600px */
@@ -113,10 +139,7 @@ body {
 
 }
 
-/* 화면 너비 0 ~ 320px */
-@media (max-width: 320px) {
 
-}
 
 
 
