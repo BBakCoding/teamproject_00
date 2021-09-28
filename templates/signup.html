@@ -28,7 +28,7 @@
 
     <!-- CSS reset, CSS style, Jquery import -->
     <link rel="stylesheet" href="/static/reset.css">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/signupstyle.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
@@ -36,7 +36,7 @@
     <div class="body__container">
         <section class="inner">
             <h1>LOGO DESIGN</h1>
-            <form id="sign-form" method="post" action="">
+            <form id="sign-form" method="POST" action=".">
                 <div class="input-area">
                     <input id="username" class="input--text" type="text" autocomplete="off" required>
                     <label for="username">User Name</label>
@@ -59,6 +59,44 @@
             </form>
         </section>
     </div>
+    <script>
+
+    function Login_msg() {
+        let user_email = $('#email-box').val()
+        let user_password = $('#password-box').val()
+
+        $.ajax({
+            type: "POST",
+            url: "/login",
+            data: {user_email_give: user_email, user_pass_give: user_password},
+            success: function (response) {
+                alert(response['msg'])
+                window.location.reload()
+            }
+        })
+    }
+
+    function join_us() {
+        let email = $('#email-box').val()
+        let password = $('#password-box').val()
+
+        $.ajax({
+            type: "POST",
+            url: "/joinus",
+            data: {email_give: email, pass_give: password},
+            success: function (response) {
+                if (email.includes('@'))
+                alert(response["msg"]);
+                else {
+                    alert(response["msg"])
+                }
+                window.location.reload();
+            }
+        })
+    }
+
+</script>
+
 </body>
 
 </html>
