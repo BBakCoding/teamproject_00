@@ -2,14 +2,17 @@
 <html lang="ko">
 
 <head>
-    <meta name="author" content="BBakco" />
-    <meta name="description" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--html 파일의 인코딩을 알려주는 태그 추가!(영선) 이 친구 없으면 한글 다 깨져서 보임-->
+    <meta charset="utf-8">
+
+    <meta name="author" content="BBakco"/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1" />
+          content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"/>
 
     <!-- 이 아래 태그 추가함(정현). 화면 렌더링할 때 최신의 인터넷 엔진을 쓰라는 뜻의 ?-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
     <!-- http://ogp.me/ -->
     <meta property="og:type" content="">
@@ -67,218 +70,195 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="header">
-            <div class="row">
-                <div class="header_menu">
-                    <a href="#">Login</a>
-                </div>
+<header id="header">
+    <div class="header">
+        <div class="row">
+            <div class="header_menu">
+                <a href="#">Login</a>
             </div>
         </div>
-    </header>
-    <section id="section_01">
-        <div class="section_01">
-            <div class="Q_wrapper">
-                <div class="Q_text">QUES</div>
-                <div class="Q_image">
-                    <img class="logo" src="http://upload.wikimedia.org/wikipedia/commons/d/d2/Question_mark.svg"
-                         alt="question mark">
-                    <!--                https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Question_mark.svg/1200px-Question_mark.svg.png-->
-                </div>
-                <div class="Q_text">TION</div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="inner">
-        <section class="section section--second">
-
-            <div class="qna-container">
-                <div class="qna-title-container">
-                    <div class="qna-title">Q & A</div>
-                    <div class="arrow-container">
-                        <!-- <div class="slide-prev"><img src="../image/left.png" width="35px" height="35px" onmouseover="this.src='/image/left-dark.png'" onmouseout="this.src='/image/left.png'"></div>
-                        <div class="slide-next"><img src="../image/right.png" width="35px" height="35px" onmouseover="this.src='/image/right-dark.png'" onmouseout="this.src='/image/right.png'"></div> -->
-                        <img class="slide-prev" src="../image/left.png" width="35px" height="35px" onmouseover="this.src='/image/left-dark.png'" onmouseout="this.src='/image/left.png'">
-                        <img class="slide-next" src="../image/right.png" width="35px" height="35px" onmouseover="this.src='/image/right-dark.png'" onmouseout="this.src='/image/right.png'">
-                    </div>
-                </div>
-                <div class="qna-desc">
-                    다른 사람들은 지금 어떤 생각을 하고 있을까요?
-                </div>
-                <ul class="qna-showlist" data-position="0">
-                    <li class="qna-showcard qna-showcard-1">
-                        <div class="show-question-container">
-                            <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
-                        </div>
-                        <div class="show-answer-container">
-                            <div class="show-answer-text">
-                                db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
-                                하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
-                                200 공백제외 145)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="qna-showcard qna-showcard-2">
-                        <div class="show-question-container">
-                            <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
-                        </div>
-                        <div class="show-answer-container">
-                            <div class="show-answer-text">
-                                db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
-                                하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
-                                200 공백제외 145)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="qna-showcard qna-showcard-3">
-                        <div class="show-question-container">
-                            <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
-                        </div>
-                        <div class="show-answer-container">
-                            <div class="show-answer-text">
-                                db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
-                                하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
-                                200 공백제외 145)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="qna-showcard qna-showcard-4">
-                        <div class="show-question-container">
-                            <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
-                        </div>
-                        <div class="show-answer-container">
-                            <div class="show-answer-text">
-                                db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
-                                하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
-                                200 공백제외 145)
-                            </div>
-                        </div>
-                    </li>
-                    <li class="qna-showcard qna-showcard-5">
-                        <div class="show-question-container">
-                            <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
-                        </div>
-                        <div class="show-answer-container">
-                            <div class="show-answer-text">
-                                db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
-                                하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
-                                200 공백제외 145)
-                            </div>
-                        </div>
-                    </li>
-
-
-                </ul>
-
-            </div>
-
-
-        </section>
     </div>
-        <section id="section_03">
-            <div class="section_03">
-                <table class="table">
-                    <th class="table_title" colspan="2">Our Team Members</th>
-                    <tr> <!-- 사진 -->
-                        <td class="table_pic member01">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                        <td class="table_pic member02">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                        <td class="table_pic member03">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                        <td class="table_pic member04">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                        <td class="table_pic member05">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                    </tr>
-                    <tr> <!-- 이름, 역할 -->
-                        <td class="table_txt member01">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                        <td class="table_txt member02">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                        <td class="table_txt member03">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                        <td class="table_txt member04">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                        <td class="table_txt member05">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                    </tr>
-        
-                    <th class="table_title" colspan="2">Special Thanks To</th>
-                    <tr> <!-- 사진 -->
-                        <td class="table_pic">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                        <td class="table_pic">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                        <td class="table_pic">
-                            <img class="pic" src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
-                                 alt="member"
-                                 style="width: 200px; height: 200px; border-radius: 200px;">
-                        </td>
-                    </tr>
-                    <tr> <!-- 이름, 역할 -->
-                        <td class="table_txt">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                        <td class="table_txt">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                        <td class="table_txt">
-                            <p><span style="font-weight: bold;">김영선</span></p>
-                            <br>
-                            <p>프론트엔드, 백엔드 개발</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <footer id="footer"></footer>
-    </section>
+</header>
 
-    <a id="backtotop" href="#"></a>
- 
+<section id="section_01">
+    <div class="section_01">
+        <div class="Q_wrapper">
+            <div class="Q_text">QUES</div>
+            <div class="Q_image">
+                <img class="logo" src="http://upload.wikimedia.org/wikipedia/commons/d/d2/Question_mark.svg"
+                     alt="question mark">
+                <!--                https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Question_mark.svg/1200px-Question_mark.svg.png-->
+            </div>
+            <div class="Q_text">TION</div>
+        </div>
+    </div>
+</section>
+
+
+<div class="inner">
+    <section class="section section--second">
+
+        <div class="qna-container">
+            <div class="qna-title-container">
+                <div class="qna-title">Q & A</div>
+                <div class="arrow-container">
+                    <!-- <div class="slide-prev"><img src="../image/left.png" width="35px" height="35px" onmouseover="this.src='/image/left-dark.png'" onmouseout="this.src='/image/left.png'"></div>
+                    <div class="slide-next"><img src="../image/right.png" width="35px" height="35px" onmouseover="this.src='/image/right-dark.png'" onmouseout="this.src='/image/right.png'"></div> -->
+                    <img class="slide-prev" src="../image/left.png" width="35px" height="35px"
+                         onmouseover="this.src='/image/left-dark.png'" onmouseout="this.src='/image/left.png'">
+                    <img class="slide-next" src="../image/right.png" width="35px" height="35px"
+                         onmouseover="this.src='/image/right-dark.png'" onmouseout="this.src='/image/right.png'">
+                </div>
+            </div>
+            <div class="qna-desc">
+                다른 사람들은 지금 어떤 생각을 하고 있을까요?
+            </div>
+            <ul class="qna-showlist" data-position="0">
+                <li class="qna-showcard qna-showcard-1">
+                    <div class="show-question-container">
+                        <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
+                    </div>
+                    <div class="show-answer-container">
+                        <div class="show-answer-text">
+                            db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
+                            하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
+                            200 공백제외 145)
+                        </div>
+                    </div>
+                </li>
+                <li class="qna-showcard qna-showcard-2">
+                    <div class="show-question-container">
+                        <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
+                    </div>
+                    <div class="show-answer-container">
+                        <div class="show-answer-text">
+                            db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
+                            하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
+                            200 공백제외 145)
+                        </div>
+                    </div>
+                </li>
+                <li class="qna-showcard qna-showcard-3">
+                    <div class="show-question-container">
+                        <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
+                    </div>
+                    <div class="show-answer-container">
+                        <div class="show-answer-text">
+                            db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
+                            하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
+                            200 공백제외 145)
+                        </div>
+                    </div>
+                </li>
+                <li class="qna-showcard qna-showcard-4">
+                    <div class="show-question-container">
+                        <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
+                    </div>
+                    <div class="show-answer-container">
+                        <div class="show-answer-text">
+                            db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
+                            하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
+                            200 공백제외 145)
+                        </div>
+                    </div>
+                </li>
+                <li class="qna-showcard qna-showcard-5">
+                    <div class="show-question-container">
+                        <div class="show-question-text">Q.가장 기억에 남는 여행지는?<br>db에서 가져오기</div>
+                    </div>
+                    <div class="show-answer-container">
+                        <div class="show-answer-text">
+                            db에서 가져오기 고장이 난 시계 속의 스물네 시간을 되찾자 번져 있는 잉크 위에 아침 햇살을 담아 건져 올릴 하루를 담담히 써 내려가 보자 의미를 알지 못한
+                            하루 속에 음미를 하지 못한 시간 탓에 온기를 담지 못한 순간들에게 사과해야지 이젠 다가가야지 묻혀 있는 시간 위에 노래를 부르자 던져 버린 스물네(공백포함
+                            200 공백제외 145)
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+    </section>
+</div>
+
+<a id="backtotop" href="#"></a>
+
+<section id="section_03">
+    <div class="section_03">
+        <p class="member_title">Our Team Members</p>
+        <div class="member">
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+        </div>
+        <p class="member_title">Special Thanks To</p>
+        <div class="member">
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+            <div class="member_card">
+                <img src="https://img.animalplanet.co.kr/news/2019/06/26/700/6l5n405756f5r183zt0f.jpg"
+                     alt="member"
+                     class="member_img">
+                <p style="text-align: center"><span style="font-weight: bold;">김영선</span></p>
+                <p style="text-align: center"><br>프론트엔드, 백엔드 개발</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer">
+        <p> "?"(QUESTION) BY SPARTACODINGCLUB 15일 프로젝트 챌린지 TEAM 3 빡코 </p>
+        <p> copyrightⓒ2021 빡코 All rights reserved </p>
+    </div>
+</footer>
 
 </body>
 
