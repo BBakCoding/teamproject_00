@@ -179,7 +179,7 @@ body {
 /* 화면 너비 0 ~ 1300px */
 @media (max-width: 1300px) {
     .section_03 {
-        height: 1000px;
+        height: 1010px;
     }
 
     .section_03 .member {
@@ -226,7 +226,7 @@ body {
 
 @media (max-width: 860px) {
     .section_03 {
-        height: 1300px;
+        height: 1370px;
     }
 
     .section_03 .member {
@@ -266,7 +266,7 @@ body {
     }
 
     .section_03 {
-        height: 1250px;
+        height: 1300px;
     }
 
     .section_03 .member {
