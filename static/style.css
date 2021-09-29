@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;; }
+
+a { text-decoration:none } 
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    overflow: hidden;
+}
+
+
+
+.section {
+    position: relative;
+}
+  
+.section_01 {
+    position: relative;
+    background-color: #ff3300;
+    background-size: cover;
+    height: 760px;
+} 
+.section--second {
+    position: relative;
+    background-color: #ffffff;
+    background-size: cover;
+    height: 754px;
+}
+ 
+/* 헤더 */
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #ff3300;
+    padding: 0.3rem;
+}
+
+.header .header_menu {
+    text-align: right;
+}
+
+.header .header_menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 0 6px 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+.header .header_menu a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    /*color: rgba(0,0,0,0.8);*/
+}
+
+/* section_01 */
+.section_01 {
+    width: 100%;
+    height: 700px;
+}
+
+.section_01 .Q_wrapper {
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.section_01 .Q_text {
+    float: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100px;
+    color: white;
+    padding-top: 100px;
+    margin: 0 10px;
+}
+
+.section_01 .Q_image {
+    float: left;
+    width: 200px;
+    height: 386px;
+    margin: 0 10px;
+}
+
+.section_01 .Q_image .logo {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* section2부터 */
+.qna-container {
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      justify-content: space-around;
+      align-items: center;
+      overflow: hidden;
+}
+
+.qna-title-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+  }
+
+.qna-title {
+      font-size: 3rem;
+      font-family: 'EB Garamond', serif;
+      margin-left: 2rem;
+  }
+
+   /* 카드리스트 좌우 이동 */
+.arrow-container {
+      display: flex;
+  }
+
+.slide-prev {
+      margin: 3px;
+      cursor: pointer;
+  }
+
+  .slide-next {
+      margin: 3px;
+      cursor: pointer;
+  }
+
+.qna-desc {
+    margin: 40px;
+    font-size: 1.3rem;
+}
+
+  .qna-showlist {
+      display: flex;
+      list-style: none;
+      padding: 0 0 2rem 0;
+      position: absolute;
+      margin: 0 0 0 0;
+      overflow: hidden;
+  }
+
+
+  .qna-showcard {
+      width: 355px;
+      height: 500px;
+      box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.3);
+      border-radius: 8px;
+      margin: 0px 25px;
+      overflow: hidden;
+  }
+
+  .qna-showcard:hover {
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+    transform: translate(0, -5px);
+    transition-duration: 0.6s;
+  }
+
+  .show-question-container {
+      padding: 30px;
+  }
+
+  .show-question-text {
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 180%;
+      font-weight: 600;
+    
+  }
+
+  .show-answer-container {
+      padding: 30px;
+  }
+
+  .show-answer-text {
+      font-size: 1.1rem;
+      line-height: 180%;
+      width: 100%;    
+      display:-webkit-box;
+      -webkit-line-clamp:9;
+      -webkit-box-orient:vertical;
+      height: 100%;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      font-weight: 350;
+}
+
+
+#backtotop {
+  background-color: rgb(47, 48, 89);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  border-radius: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition-property: background-color, opacity, visibility;
+  transition-duration: 0.3s, 0.5s, 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+/* 아이콘 적용 방법
+  1. ::after (요소 뒤에 content 추가) 가상 요소에서,
+  2. content: "폰트어썸 유니코드" 를 넣고,
+  3. font-family: FontAwesome 이라고 넣으면 됨
+  */
+#backtotop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #fff;
+}
+
+#backtotop.show:hover {
+  cursor: pointer;
+  background-color: #2186c4;
+}
+
+#backtotop.show {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgb(47, 48, 49);
+}
+
+  @media only screen and (min-width: 1200px) {
+      .inner {
+          max-width: 1200px;
+      }
+  }
+
+  @media only screen and (max-width: 980px) {
+    /*화면크기 작아지면 변경할 사항들 */
+    .show-answer-text {
+        font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+      /*화면크기 작아지면 변경할 사항들 */
+        .arrow-container {
+            display: none;
+        }
+
+        .qna-showcard {
+            width: 250px;
+            position: relative;
+        }
+
+        .show-answer-text {
+            font-size: 1.1rem;
+        }
+    }
+/* section3 */
+
+/* section_03 */
+.section_03 {
+    width: 100%;
+    height: 734px;
+}
+
+.section_03 .table {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.section_03 .table_title {
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: left;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.section_03 .table .table_pic {
+    padding: 20px;
+}
+
+.section_03 .table .table_txt {
+    padding-bottom: 70px;
+}
+
+
+/* media query*/
+/* 화면 너비 0 ~ 1540px */
+@media (max-width: 1540px) {
+    .header {
+        width: 100%;
+    }
+
+    .header .row {
+        padding: 0 15px;
+    }
+
+    .section_01 {
+        width: 100%;
+    }
+
+    .section_02 {
+        width: 100%;
+    }
+
+    .section_03 {
+        width: 100%;
+    }
+
+}
+
+/* 화면 너비 0 ~ 1250px */
+@media (max-width: 1250px) {
+    .section_03 .table_title {
+        padding-left: 20px;
+    }
+
+    .section_03 .table .table_pic {
+        padding-left: 40px;
+        margin: 0 auto;
+    }
+
+    .section_03 .table .table_txt {
+        padding-left: 40px;
+        margin: 0 auto;
+    }
+
+    .section_03 .member01 {
+        width: 30%
+    }
+    .section_03 .member02 {
+        width: 30%
+    }
+    .section_03 .member03 {
+        width: 30%
+    }
+
+    .section_03 .member04 {
+        width: 30%
+    }
+
+    .section_03 .member05 {
+        width: 30%
+    }
+
+
+}
+
+/* 화면 너비 0 ~ 1024px */
+@media (max-width: 1024px) {
+}
+
+/* 화면 너비 0 ~ 960px */
+@media (max-width: 960px) {
+    .section_01 .Q_wrapper {
+        width: 580px;
+        margin: 0 auto;
+    }
+
+    .section_01 .Q_text {
+        font-size: 70px;
+    }
+
+    .section_01 .Q_image {
+        width: 170px;
+        height: auto;
+    }
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+    .section_01 .Q_wrapper {
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    .section_01 .Q_text {
+        font-size: 50px;
+    }
+
+    .section_01 .Q_image {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* 화면 너비 0 ~ 600px */
+@media (max-width: 600px) {
+
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+
+}
+
+
