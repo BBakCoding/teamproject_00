@@ -19,6 +19,7 @@
   "homepage": "https://github.com/BBakCoding/teamproject_00#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "generator-express-es6": "^1.0.2"
+    "generator-express-es6": "^1.0.2",
+    "nodemon": "^2.0.13"
   }
 }
