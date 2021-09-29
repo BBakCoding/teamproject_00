@@ -67,6 +67,7 @@ body {
 }
 
 .section_01 .Q_text {
+    display: inline-block;
     float: left;
     font-family: 'Cormorant Garamond', serif;
     font-size: 100px;
@@ -76,6 +77,7 @@ body {
 }
 
 .section_01 .Q_image {
+    display: inline-block;
     float: left;
     width: 200px;
     height: 386px;
@@ -176,6 +178,10 @@ body {
 
 /* 화면 너비 0 ~ 1300px */
 @media (max-width: 1300px) {
+    .section_03 {
+        height: 1000px;
+    }
+
     .section_03 .member {
         font-size: 19px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -219,6 +225,10 @@ body {
 }
 
 @media (max-width: 860px) {
+    .section_03 {
+        height: 1300px;
+    }
+
     .section_03 .member {
         font-size: 18px;
         grid-template-columns: 1fr 1fr;
@@ -253,6 +263,10 @@ body {
     .section_01 .Q_image {
         width: 150px;
         height: auto;
+    }
+
+    .section_03 {
+        height: 1250px;
     }
 
     .section_03 .member {
