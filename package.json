@@ -1,0 +1,24 @@
+{
+  "name": "teamproject_00",
+  "version": "1.0.0",
+  "description": "알잘딱깔센이란? 알아서 잘 딱 깔끔하고 센스있게라는 말입니다.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BBakCoding/teamproject_00.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BBakCoding/teamproject_00/issues"
+  },
+  "homepage": "https://github.com/BBakCoding/teamproject_00#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "generator-express-es6": "^1.0.2"
+  }
+}
